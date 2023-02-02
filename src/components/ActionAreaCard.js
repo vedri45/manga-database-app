@@ -14,7 +14,7 @@ function ActionAreaCard({ manga }) {
                     <CardMedia
                         component="img"
                         height="600"
-                        image={manga.image_url}
+                        image={manga.images.jpg.image_url}
                     />
                     <CardContent>
                         <Typography sx={{ fontWeight: 'bold' }} gutterBottom variant="h5" component="div">

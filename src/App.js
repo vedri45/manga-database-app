@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import Content from './components/Content';
 import PersistentDrawerLeft from './components/PersistentDrawerLeft';
+import axios from 'axios';
 
 function App() {
   const [mangaList, SetMangaList] = useState([]);
@@ -9,9 +10,10 @@ function App() {
   const [search, SetSearch] = useState("");
 
   const GetTopManga = async () => {
-    const response = await fetch(`https://api.jikan.moe/v3/top/manga/1/bypopularity`)
-      .then(res => res.json());
-    SetTopManga(response.top.slice(0, 5));
+    await axios.get(`https://api.jikan.moe/v4/top/manga?filter=bypopularity`)
+      .then(async response => {
+        SetTopManga(response.data.data);
+      });
   }
 
   const HandleSearch = e => {
@@ -24,10 +26,10 @@ function App() {
   }
 
   const FetchManga = async (query) => {
-    const response = await fetch(`https://api.jikan.moe/v3/search/manga?q=${query}&order_by=title&sort=asc&limit=9`)
-      .then(res => res.json());
-
-    SetMangaList(response.results);
+    await axios.get(`https://api.jikan.moe/v4/manga?q=${query}&order_by=title&sort=asc&limit=9`)
+      .then(async response => {
+        SetMangaList(response.data.data);
+      });
   }
 
   useEffect(() => {
