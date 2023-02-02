@@ -8,7 +8,7 @@ function Content(props) {
             <Box
                 component="form"
                 sx={{
-                    '& > :not(style)': { m: 2, width: '55ch' },
+                    '& > :not(style)': { m: 2, width: '80%' },
                 }}
                 noValidate
                 autoComplete="off"

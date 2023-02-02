@@ -16,7 +16,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 
-const drawerWidth = 240;
+const drawerWidth = 400;
 
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
     ({ theme, open }) => ({
@@ -122,7 +122,7 @@ export default function PersistentDrawerLeft({ topManga }) {
                     {topManga.map(manga => (
                         <ListItem key={manga.mal_id} disablePadding>
                             <ListItemButton href={manga.url} target="_blank">
-                                <ListItemText primary={manga.title} />
+                                <ListItemText primary={manga.title} sx={{textAlign: 'center'}}/>
                             </ListItemButton>
                         </ListItem>
                     ))}
