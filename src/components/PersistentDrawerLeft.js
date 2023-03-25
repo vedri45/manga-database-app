@@ -76,7 +76,7 @@ export default function PersistentDrawerLeft({ topManga }) {
     };
 
     return (
-        <Box sx={{ display: 'flex' }}>
+        <Box>
             <CssBaseline />
             <AppBar position="fixed" open={open}>
                 <Toolbar>

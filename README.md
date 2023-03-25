@@ -14,39 +14,26 @@ need for a complete API - which MyAnimeList lacks.
 
 [Documentation](https://docs.api.jikan.moe/)
 
-## Available Scripts
+## Installing Yarn
 
-In the project directory, you can run:
+Read the [Installation Guide](https://yarnpkg.com/en/docs/install) on our website for detailed instructions on how to install Yarn.
 
-### `npm start`
+## Using Yarn
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Read the [Usage Guide](https://yarnpkg.com/en/docs/usage) on our website for detailed instructions on how to use Yarn.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Contributing to Yarn
 
-### `npm test`
+The 1.x codebase is fairly old and will only accept security fixes. For new features or bugfixes, please see our new [repository](https://github.com/yarnpkg/berry) and its [contribution guide](https://yarnpkg.com/advanced/contributing).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Prior art
 
-### `npm run build`
+Yarn wouldn't exist if it wasn't for excellent prior art. Yarn has been inspired by the following projects:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ - [Bundler](https://github.com/bundler/bundler)
+ - [Cargo](https://github.com/rust-lang/cargo)
+ - [npm](https://github.com/npm/cli)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Credits
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Thanks to [Sam Holmes](https://github.com/samholmes) for donating the npm package name!
